@@ -23,18 +23,17 @@
       name="description"
       content="Get to know how many wins you need in order to reach your desired winrate on your favorite heroes!"
     />
-    <meta name="Mobile Legends " content="index,follow" />
-    <meta property="og:title" content="Hello World!" />
+    <meta name="Mobile Legends Bang Bang" content="mlbb, wr, calcultor" />
+    <meta property="og:title" content="MLBB WR Calculator" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
+    <meta property="og:url" content="https://mlbbwr.glitch.me/" />
     <meta
       property="og:description"
-      content="A simple website, built with Glitch. Remix it to get your own."
+      content="Get to know how many wins you need in order to reach your desired winrate on your favorite heroes!"
     />
     <meta
       property="og:image"
-      content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"
-    />
+      content="https://cdn.glitch.global/6a27c957-9e80-4e5a-a0f0-53d7d245ab11/images.jpeg?v=1664974540178"    />
     <meta name="twitter:card" content="summary" />
 
     <!-- Import the webpage's stylesheet -->
@@ -61,37 +60,24 @@
 							<!--Body-->
 							<form action="#">
 
-								<h5 class="h5-responsive">Desired Winrate(%)</h5>
+								<h5 class="h5-responsive">Desired Winrate(%):</h5>
 								<div class="md-form">
 									<input type="number" id="form1" class="form-control">
 								</div>
 								<!-- /.Basic textbox -->
 
-								<h5 class="h5-responsive">Current WinRate(%)</h5>
+								<h5 class="h5-responsive">Current WinRate(%):</h5>
 								<div class="md-form">
 									<input type="number" id="form2" class="form-control">
 								</div>
 
 								<!--Email validation-->
-								<h5 class="h5-responsive">Current Number of Matches</h5>
+								<h5 class="h5-responsive">Current No. of Matches:</h5>
 								<div class="md-form">
 									<input type="number" id="form3" class="form-control">
-								</div>
-
-								<!--Textarea with icon-->
-								<h5 class="h5-responsive">Textarea</h5>
-								<div class="md-form">
-									 <i class="fa fa-pencil prefix"></i>
-									<textarea type="text" id="form7" class="md-textarea"></textarea>
-									<label for="form7">Textarea</label>
-								</div>
-
-								<h5 class="h5-responsive">Disabled field</h5>
-								<div class="md-form">
-									<input type="text" id="form11" class="form-control" disabled>
-									<label for="form11" class="disabled">Example label</label>
-								</div>
-
+								</div> <br>
+                Wins Needed: <br>
+              <span id="result"></span>
 								<div class="text-xs-left">
 									<button class="btn btn-primary">Submit</button>
 								</div>
