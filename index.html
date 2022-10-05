@@ -40,62 +40,102 @@
 
     <!-- Import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Import the webpage's javascript file -->
     <script src="/script.js" defer></script>
   </head>
   <body>
-    <!--
-      This is the body of the page
-      Look at the elements and see how they appear in the rendered page on the right
-      Each element is defined using tags, with < and > indicating where each one opens and closes
-      There are elements for sections of the page, images, text, and more
-      The elements include attributes referenced in the CSS for the page style
-    -->
+	<div class="panel deep-purple"></div>
+	<main class="freeBird">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7 m-x-auto pull-xs-none">
+					<div class="jumbotron">
+						<h2 class="h2-responsive"><strong>Mobile Legends</strong></h2>
+						<p>Example of Material Design Form</p>
+						<!-- <hr class="m-y-2"> -->
 
-    <!-- The wrapper and content divs set margins and positioning -->
-    <div class="wrapper">
-      <div class="content" role="main">
-        <!-- This is the start of content for our page -->
-        <h1 class="title">Hello World!</h1>
+						<!--Naked Form-->
+						<div class="card-block">
 
-        <img
-          src="https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2Fillustration.svg?v=1618177344016"
-          class="illustration"
-          alt="Editor illustration"
-          title="Click the image!"
-        />
-        <!-- Instructions on using this project -->
-        <div class="instructions">
-          <h2>
-            Using this project
-          </h2>
-          <p>
-            This is the Glitch <strong>Hello Website</strong> project. You can
-            use it to build your own site. Check out README.md in the editor for
-            more info and next steps you can take!
-          </p>
-          <!-- ADD BUTTON HERE -->
-          
-          <!-- Once you've added the button from the readme, click it in the page -->
-          <!-- Check out the function in script.js to see how it works -->
-        </div>
-      </div>
-    </div>
-    <!-- The footer holds our remix button — you can use it for structure or cut it out ✂ -->
-    <footer class="footer">
-      <div class="links"></div>
-      <a
-        class="btn--remix"
-        target="_top"
-        href="https://glitch.com/edit/#!/remix/glitch-hello-website"
-      >
-        <img
-          src="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FLogo_Color.svg?v=1618199565140"
-          alt=""
-        />
-        Remix on Glitch
-      </a>
-    </footer>
+							<!--Body-->
+							<form action="#">
+
+								<h5 class="h5-responsive">Basic Textbox</h5>
+								<!-- Basic textbox -->
+								<div class="md-form">
+									<input type="text" id="form1" class="form-control">
+									<label for="form1" class="">Example label</label>
+								</div>
+								<!-- /.Basic textbox -->
+
+								<h5 class="h5-responsive">Textbox with icon</h5>
+								<div class="md-form">
+									<i class="fa fa-user prefix"></i>
+									<input type="text" id="form2" class="form-control">
+									<label for="form2">Your name</label>
+								</div>
+
+								<!--Email validation-->
+								<h5 class="h5-responsive">E-mail validation</h5>
+								<div class="md-form">
+									<i class="fa fa-envelope prefix"></i>
+									<input type="email" id="form9" class="form-control validate">
+									<label for="form9" data-error="wrong" data-success="right">Your email</label>
+								</div>
+
+								<!--Textarea with icon-->
+								<h5 class="h5-responsive">Textarea</h5>
+								<div class="md-form">
+									 <i class="fa fa-pencil prefix"></i>
+									<textarea type="text" id="form7" class="md-textarea"></textarea>
+									<label for="form7">Textarea</label>
+								</div>
+
+								<h5 class="h5-responsive">Disabled field</h5>
+								<div class="md-form">
+									<input type="text" id="form11" class="form-control" disabled>
+									<label for="form11" class="disabled">Example label</label>
+								</div>
+
+								<div class="text-xs-left">
+									<button class="btn btn-primary">Submit</button>
+								</div>
+							</form>
+
+							<div class="m-y-2">
+								<p class="small-text small-thin-text" style="font-weight:300">Never submit your passwords through Google Forms</p>
+							</div>
+
+						</div>
+						<!--Naked Form-->
+
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 m-x-auto pull-xs-none">
+					<p class="text-xs-center small-text m-y-2 p-x-2">This content was not created or endorsed by Google. Report Abuse - Terms of Service - Additional Terms</p>
+				</div>
+			</div>
+		</div>
+	</main>
+
+<!-- Outro -->
+				<section id="outro">
+          <div class="container">
+            <div class="row text-xs-center p-t-1 p-b-4">
+              <div class="col-md-12">
+                <br>
+                <h3>Built with Material Design for Bootstrap</h3>
+                <br>
+                <p>Powerful and free Material Design UI KIT</p>
+                <p><strong>400+</strong> material UI elements, <strong>600+</strong> material icons, <strong>74</strong> CSS animations, SASS files, templates, tutorials and many more. </p>
+                <a target="_blank" href="https://mdbootstrap.com/material-design-for-bootstrap/" class="btn btn-primary btn-lg"><i class="fa fa-download left"></i> Free download</a>
+              </div>
+            </div>
+          </div>
+				</section>
+				<!-- /.Outro -->
   </body>
 </html>
