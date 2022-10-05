@@ -41,7 +41,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
+    <script type="text/javascript" src="script.js"></script>
   </head>
   <body bgcolor="#111111">
 	<div class="panel deep-purple"></div>
@@ -62,25 +62,22 @@
 
 								<h5 class="h5-responsive">Desired Winrate(%):</h5>
 								<div class="md-form">
-									<input type="number" id="form1" class="form-control">
+									<input type="number" id="dwr" class="form-control">
 								</div>
 								<!-- /.Basic textbox -->
 
 								<h5 class="h5-responsive">Current WinRate(%):</h5>
 								<div class="md-form">
-									<input type="number" id="form2" class="form-control">
+									<input type="number" id="cwr" class="form-control">
 								</div>
 
 								<!--Email validation-->
 								<h5 class="h5-responsive">Current No. of Matches:</h5>
 								<div class="md-form">
-									<input type="number" id="form3" class="form-control">
+									<input type="number" id="ma" class="form-control">
 								</div> <br>
                 Wins Needed: <br>
               <span id="result"></span>
-								<div class="text-xs-left">
-									<button class="btn btn-primary">Submit</button>
-								</div>
 							</form>
 						</div>
 						<!--Naked Form-->
