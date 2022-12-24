@@ -1,3 +1,5 @@
+document.getElementById('date').valueAsDate() = new Date();
+
 function myfun() 
 {
 var time = document.getElementById('time').value;
