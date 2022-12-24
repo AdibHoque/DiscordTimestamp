@@ -1,4 +1,9 @@
-document.getElementById("date").defaultValue = "2004-04-04";
+Date.prototype.toDateInputValue = (function() {
+    var local = new Date(this);
+    local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
+    return local.toJSON().slice(0,10);
+});
+document.getElementById('date').value = new Date().toDateInputValue();
 
 
 function myfun() 
@@ -10,7 +15,8 @@ var timeobj = new Date(datetime)
 var unixTimestamp = Math.floor(timeobj.getTime() / 1000)
 var type=document.getElementById('type').value;
   
-var timestamp = `<t:${unixTimestamp}:${type}>`
+let timestamp = `<t:${unixTimestamp}:${type}>`
+if(!time || !date) timestamp = "Please specify Date and Time."
 document.getElementById('result').value=timestamp
 }
 
