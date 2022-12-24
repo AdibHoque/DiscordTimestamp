@@ -2,8 +2,8 @@
 function myfun() 
 {
 var time = document.getElementById('time').value;
-var date=document.getElementById('date').value;
-var datetime = Date.now()
+var date = document.getElementById('date').value;
+var datetime = `${date} ${time}`
 var timeobj = new Date(datetime)
 var type=document.getElementById('type').value;
 
