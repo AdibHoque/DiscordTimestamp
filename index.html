@@ -78,7 +78,16 @@
 								<!--Email validation-->
 								<h5 class="h5-responsive">Type:</h5>
 								<div class="md-form">
-									<input type="select" id="ma" class="form-control">
+                  <select id="cars" name="cars">
+                  <option value="relative">Relative</option>
+                  <option value="st">Short Time</option>
+                  <option value="lt">Long Time</option>
+                  <option value="sd">Short Date</option>
+                  <option value="ld">Long Date</option>
+                  <option value="ldst">Long Date with Short Time</option>
+                  <option value="lddst">Long Date with Day of the Week and Short Date</option>
+                  </select>
+									<input type="text" id="ma" class="form-control">
 								</div> 
                 <div class="text-xs-left"> <br>
 									<input type="button" class="btn btn-primary" value="Submit" onclick="return myfun()">
