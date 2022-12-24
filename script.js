@@ -1,3 +1,5 @@
+document.getElementById("date").defaultValue = "2004-04-04";
+
 
 function myfun() 
 {
