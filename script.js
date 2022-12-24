@@ -9,5 +9,20 @@ var type=document.getElementById('type').value;
 
 var v=`${time} ${date} ${type}`
 
-document.getElementById('result').innerHTML=datetime
+document.getElementById('result').value=datetime
+}
+
+function copy() {
+  // Get the text field
+  var copyText = document.getElementById("result");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+  // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+  
+  // Alert the copied text
+  alert("Copied: "+copyText.value);
 }
