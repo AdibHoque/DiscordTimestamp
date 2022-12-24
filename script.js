@@ -5,11 +5,10 @@ var time = document.getElementById('time').value;
 var date = document.getElementById('date').value;
 var datetime = `${date} ${time}`
 var timeobj = new Date(datetime)
+//var unixTimestamp = Math.floor(datetime.getTime() / 1000)
 var type=document.getElementById('type').value;
 
-var v=`${time} ${date} ${type}`
-
-document.getElementById('result').value=datetime
+document.getElementById('result').value=timeobj.getTime()
 }
 
 function copy() {
