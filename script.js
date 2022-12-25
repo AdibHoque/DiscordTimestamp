@@ -1,22 +1,17 @@
-Date.prototype.toDateInputValue = (function() {
-    var local = new Date(this);
-    local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
-    return local.toJSON().slice(0,10);
-});
-document.getElementById('date').value = new Date().toDateInputValue();
+document.getElementById('tdate').value = '2004-04-04';
 
 
 function myfun() 
 {
 var time = document.getElementById('time').value;
-var date = document.getElementById('date').value;
+var date = document.getElementById('tdate').value;
 var datetime = `${date} ${time}`
 var timeobj = new Date(datetime)
 var unixTimestamp = Math.floor(timeobj.getTime() / 1000)
 var type=document.getElementById('type').value;
   
 let timestamp = `<t:${unixTimestamp}:${type}>`
-if(!time || !date) timestamp = "Please specify Date and Time."
+if(!time || !date) timestamp = "Please specify Date and Time!"
 document.getElementById('result').value=timestamp
 }
 
