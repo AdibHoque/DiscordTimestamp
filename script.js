@@ -1,6 +1,7 @@
 var d = new Date()
 document.getElementById('tdate').valueAsDate = d;
-document.getElementById('time').value = `${d.getHours()}:$`
+var t = d.getHours() + ':' + d.getMinutes();
+document.getElementById('time').value = t;
 
 function myfun() 
 {
