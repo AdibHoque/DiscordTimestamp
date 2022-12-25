@@ -1,5 +1,9 @@
-document.getElementById('tdate').value = '2004-04-04';
+var d = new Date();
+var y = d.getFullYear();
+var m = d.getMonth()+1;
 
+
+document.getElementById('tdate').value = '2004-04-04';
 
 function myfun() 
 {
