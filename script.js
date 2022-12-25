@@ -1,9 +1,10 @@
 var d = new Date();
+document.getElementById('tdate').value = "2004-04-04";
+
 var y = d.getFullYear();
 var m = d.getMonth()+1;
-
-
-document.getElementById('tdate').value = '2004-04-04';
+var t = String(d.getData()).padstart(2, 0);
+var today = y + "-" + m + "-"+ t
 
 function myfun() 
 {
