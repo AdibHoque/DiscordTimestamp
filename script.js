@@ -1,6 +1,6 @@
 var d = new Date()
 document.getElementById('tdate').valueAsDate = d;
-var t = d.getHours() + ':' + d.getMinutes();
+var t = pad(d.getHours(), 2) + ':' + pad(d.getMinutes(), 2);
 document.getElementById('time').value = t;
 
 function myfun() 
@@ -23,11 +23,14 @@ function copy() {
 
   // Select the text field
   copyText.select();
-  copyText.setSelectionRange(0, 99999); // For mobile devices
-
-  // Copy the text inside the text field
+  copyText.setSelectionRange(0, 99999);
   navigator.clipboard.writeText(copyText.value);
   
   // Alert the copied text
   alert("Copied: "+copyText.value);
+}
+function pad(num, size) {
+    num = num.toString();
+    while (num.length < size) num = "0" + num;
+    return num;
 }
