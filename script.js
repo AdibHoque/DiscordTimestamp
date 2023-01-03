@@ -25,7 +25,7 @@ function copy() {
   copyText.select();
   copyText.setSelectionRange(0, 99999);
   navigator.clipboard.writeText(copyText.value);
-  
+  document.execCommand("copy");
   // Alert the copied text
   alert("Copied: "+copyText.value);
 }
